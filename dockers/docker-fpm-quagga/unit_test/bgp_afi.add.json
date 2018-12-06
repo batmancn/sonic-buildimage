@@ -1,0 +1,13 @@
+{
+    "BGP_METADATA": {
+        "localhost": {
+            "maximum_paths": "32",
+            "address_family_ipv4": "afi_ipv4"
+        },
+        "afi_ipv4": {
+            "maximum_paths": "32",
+            "network": "1.1.1.1/24|2.2.2.2/24 route-map RM_2",
+            "user_define_neighbor_activate": "10.130.32.61|10.130.33.61|10.130.34.61|10.130.35.61|10.130.36.61"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "BGP_PREFIX_SET": {
+        "0.0.0.0/0|CU_IN|deny": null,
+        "0.0.0.0/0|CU_OUT|deny": null,
+        "0.0.0.0/0|CU_OUT|permit": null
+    }
+}

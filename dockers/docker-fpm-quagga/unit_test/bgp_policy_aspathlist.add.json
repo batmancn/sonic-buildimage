@@ -1,0 +1,9 @@
+{
+    "BGP_AS_SET": {
+        "as_path_1": {
+            "description": "as_path_1",
+            "action": "permit",
+            "line": "^3356$ _65101$"
+        }
+    }
+}

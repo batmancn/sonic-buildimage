@@ -1,0 +1,9 @@
+{
+    "BGP_POLICY_ROUTE_MAP": {
+        "bgp_policy_1|deny|20": null,
+        "bgp_policy_1|deny|21": null,
+        "bgp_policy_1|deny|22": null,
+        "bgp_policy_1|deny|23": null,
+        "bgp_policy_1|deny|24": null
+    }
+}

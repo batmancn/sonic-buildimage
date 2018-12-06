@@ -1,0 +1,10 @@
+{
+    "BGP_PEER_RANGE": {
+        "PeerGroup": {
+            "name": "PeerGroup", 
+            "ip_range": [
+                "192.168.0.0/27"
+            ]
+        } 
+    }
+}

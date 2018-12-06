@@ -1,0 +1,7 @@
+{
+    "BGP_METADATA": {
+        "localhost": {
+            "graceful_restart_param": "restart-time 120|stalepath-time 360"
+        }
+    }
+}

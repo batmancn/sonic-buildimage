@@ -1,0 +1,10 @@
+{
+    "BGP_NEIGHBOR": {
+        "peergroup1": {
+        },
+        "peergroup2": {
+        },
+        "12.12.12.12": {
+        }
+    }
+}

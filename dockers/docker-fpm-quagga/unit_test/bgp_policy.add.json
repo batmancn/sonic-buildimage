@@ -1,0 +1,30 @@
+{
+    "BGP_PREFIX_SET": {
+        "CU_IN": {
+            "description": "CU_IN",
+            "0.0.0.0/0" : {
+                "compare": "le",
+                "length": "32",
+                "seq": "5",
+                "action": "deny"
+            }
+        },
+        "CU_OUT": {
+            "description": "CU_OUT",
+            "0.0.0.0/0" : {
+                "compare": "le",
+                "length": "31",
+                "seq": "5",
+                "action": "deny"
+            }
+        },
+        "CU_OUT": {
+            "0.0.0.0/0" : {
+                "compare": "le",
+                "length": "32",
+                "seq": "10",
+                "action": "permit"
+            }
+        }
+    }
+}

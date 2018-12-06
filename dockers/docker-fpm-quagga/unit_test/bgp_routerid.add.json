@@ -1,0 +1,7 @@
+{
+    "BGP_METADATA": {
+        "localhost": {
+            "router_id": "3.3.3.3"
+        }
+    }
+}

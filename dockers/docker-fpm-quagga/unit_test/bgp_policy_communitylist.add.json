@@ -1,0 +1,9 @@
+{
+    "BGP_COMMUNITY_SET": {
+        "community_1" : {
+            "description": "community_1",
+            "line": "7675:70 7675:80 7675:60",
+            "action": "deny"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "BGP_NEIGHBOR": {
+        "1.2.1.10": {
+            "admin_status": "up",
+            "asn": "5002",
+            "name": "test",
+            "local_addr": "10.1.0.30"
+        }
+    }
+}

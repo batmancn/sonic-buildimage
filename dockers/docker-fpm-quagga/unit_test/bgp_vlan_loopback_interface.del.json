@@ -1,0 +1,14 @@
+{
+    "VLAN": {
+        "Vlan3998": null
+    },
+    "LOOPBACK_INTERFACE": {
+        "Loopback1|10.18.0.32/32": null
+    },
+    "VLAN_INTERFACE": {
+        "Vlan3998|100.8.1.2/24": null
+    },
+    "INTERFACE": {
+        "Ethernet0|10.0.0.0/31": null
+    }
+}

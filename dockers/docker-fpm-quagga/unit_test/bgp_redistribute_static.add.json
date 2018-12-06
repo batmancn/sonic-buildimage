@@ -1,0 +1,7 @@
+{
+    "BGP_METADATA": {
+        "localhost": {
+            "redistribute": "static"
+        }
+    }
+}

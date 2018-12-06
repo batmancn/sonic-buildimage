@@ -1,0 +1,67 @@
+{
+    "BGP_PREFIX_SET": {
+        "bgp_prefix_1": {
+            "description": "bgp_prefix_1",
+            "192.168.3.10" : {
+                "compare": "eq",
+                "length": "24",
+                "action": "in"
+            }
+        }
+    },
+    "BGP_COMMUNITY": {
+        "bgp_community_1": "5003:300",
+        "bgp_community_2": "5004:400"
+    },
+    "BGP_COMMUNITY_SET": {
+        "bgp_community_set_1" : {
+            "description": "bgp_community_set_1",
+            "list": {
+                "bgp_community_1": {},
+                "bgp_community_2": {}
+            }
+        }
+    },
+    "BGP_AS_SET": {
+        "bgp_as_set_1": {
+            "description": "bgp_as_set_1",
+            "re": {
+                "^3356$": {}
+            }
+        }
+    },
+    "BGP_POLICY": {
+        "policy_in_1": {
+            "description": "policy_in_1",
+            "10": {
+                "description": "policy_in_1_10",
+                "conditions": {
+                    "prefix_set": "prefix_set_1",
+                    "community": "bgp_community_1",
+                    "communities": "bgp_community_set_1",
+                    "as_path": "bgp_as_set_1",
+                    "protocol": "bgp"
+                },
+                "actions": {
+                    "next_hop": "self",
+                    "permit": "true",
+                    "local_preference": "512",
+                    "communities": {
+                        "additive": "true",
+                        "bgp_as_set_1": {}
+                    }
+                }
+            }
+        }
+    },
+    "BGP_NEIGHBOR": {
+        "192.168.2.10": {
+            "group": "unuse this entry",
+            "policy_in": "policy_in_1",
+            "policy_out": "policy_out_1",
+            "password": "unuse this entry"
+        },
+        "unused group name": {
+        }
+    }
+}

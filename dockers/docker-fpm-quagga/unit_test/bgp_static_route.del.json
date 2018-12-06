@@ -1,0 +1,6 @@
+{
+    "STATIC_ROUTE": {
+        "dst_ip:10.0.0.1/24|nexthop:200.0.0.2": null,
+        "dst_ip:10.0.0.1/24|nexthop:Ethernet30": null
+    }
+}

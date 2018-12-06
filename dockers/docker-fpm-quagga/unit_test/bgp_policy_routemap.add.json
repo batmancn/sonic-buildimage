@@ -1,0 +1,25 @@
+{
+    "BGP_POLICY_ROUTE_MAP": {
+        "bgp_policy_1|deny|20": {
+            "description": "I am description",
+            "match_as_path": "as_path_1",
+            "set_as_path": "1"
+        },
+        "bgp_policy_1|deny|21": {
+            "match_prefix_list": "ipv6|match_prefix_list_ipv6_1",
+            "set_metric": "10"
+        },
+        "bgp_policy_1|deny|22": {
+            "match_prefix_list": "ipv6|match_prefix_list_ipv6_2",
+            "set_community": "4567:10"
+        },
+        "bgp_policy_1|deny|23": {
+            "match_prefix_list": "ipv6|match_prefix_list_ipv6_3",
+            "set_local_preference": "10"
+        },
+        "bgp_policy_1|deny|24": {
+            "match_prefix_list": "ip|match_prefix_list_ipv6_4",
+            "set_ip_next_hop": "127.0.0.1"
+        }
+    }
+}

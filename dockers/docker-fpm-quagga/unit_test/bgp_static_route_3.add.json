@@ -1,0 +1,8 @@
+{
+    "STATIC_ROUTE": {
+        "10.1.1.1/24": {
+            "nexthop": "Ethernet47",
+            "metric": "200"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "VLAN": {
+        "Vlan3998": {
+            "vlanid": "3998"
+        }
+    },
+    "LOOPBACK_INTERFACE": {
+        "Loopback1|10.18.0.32/32": {
+            "op": "add"
+        }
+    },
+    "VLAN_INTERFACE": {
+        "Vlan3998|100.8.1.2/24": {
+            "op": "add"
+        }
+    },
+    "INTERFACE": {
+        "Ethernet0|10.0.0.0/31": {
+            "op": "add"
+        }
+    }
+}

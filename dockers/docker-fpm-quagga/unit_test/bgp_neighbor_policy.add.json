@@ -1,0 +1,21 @@
+{
+    "BGP_NEIGHBOR": {
+        "192.168.1.10": {
+            "admin_status": "up",
+            "asn": "5001",
+            "name": "test",
+            "local_addr": "192.168.1.20",
+            "policy_in": "BGP_POLICY_NAME_1|BGP_POLICY_NAME_2|BGP_POLICY_NAME_3|BGP_POLICY_NAME_4",
+            "policy_out": "BGP_POLICY_NAME_1|BGP_POLICY_NAME_2",
+            "policy_import": "BGP_POLICY_NAME_1|BGP_POLICY_NAME_2|BGP_POLICY_NAME_3|BGP_POLICY_NAME_4",
+            "policy_export": "BGP_POLICY_NAME_1|BGP_POLICY_NAME_2",
+            "remote_as": "20",
+            "description": "DESCRIPTION",
+            "password": "PASSWORD",
+            "ebgp_multihop": "64",
+            "maximum_paths": "64",
+            "prefix_in": "BGP_PREFIX_SET_NAME_1|BGP_PREFIX_SET_NAME_2",
+            "prefix_out": "BGP_PREFIX_SET_NAME_1|BGP_PREFIX_SET_NAME_2"
+        }
+    }
+}

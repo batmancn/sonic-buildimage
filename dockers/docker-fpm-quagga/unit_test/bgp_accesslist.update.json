@@ -1,0 +1,7 @@
+{
+    "IP_ACCESS_LIST": {
+        "filter|deny 100.2.1.2/24 exact-match": {},
+        "filter|permit 200.1.2.1/24": {},
+        "filter|remark 2424:24 3232:32": null
+    }
+}
