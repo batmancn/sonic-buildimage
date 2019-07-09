@@ -2,7 +2,10 @@ export GOPATH=/tmp/go
 
 INSTALL := /usr/bin/install
 
-all: sonic-telemetry
+all: mt-telemetry
+
+mt-telemetry:
+	/usr/local/go/bin/go get -v github.com/batmancn/sonic-telemetry/telemetry
 
 sonic-telemetry:
 	/usr/local/go/bin/go get -v github.com/Azure/sonic-telemetry/telemetry
