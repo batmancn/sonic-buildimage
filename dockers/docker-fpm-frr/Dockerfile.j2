@@ -39,6 +39,7 @@ RUN apt-get autoremove -y
 RUN rm -rf /debs ~/.cache
 
 COPY ["bgpcfgd", "start.sh", "/usr/bin/"]
+COPY ["bgpcfgd", "start.sh", "bgp-peer-status", "/usr/bin/"]
 COPY ["*.j2", "/usr/share/sonic/templates/"]
 COPY ["supervisord.conf", "/etc/supervisor/conf.d/"]
 

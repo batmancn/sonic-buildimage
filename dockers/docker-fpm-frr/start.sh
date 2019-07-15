@@ -32,7 +32,7 @@ supervisorctl start rsyslogd
 
 supervisorctl start bgpcfgd
 
-supervisorctl start bgp-peer-status.py
+supervisorctl start bgp-peer-status
 
 # Start Quagga processes
 supervisorctl start zebra
