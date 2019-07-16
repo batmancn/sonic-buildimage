@@ -40,6 +40,10 @@ def getPeerStatus(peerRemoteAddr):
     else:
         return ""
 
+def getApplDbPeerStatus(peerRemoteAddr):
+    key = 'BGP_NEIGHBOR:' + peerRemoteAddr
+    return appDbConnector.get('APPL_DB', key, 'peer_status')
+
 def readConfigDb():
     command = ['sonic-cfggen', '-d', '--print-data']
     return runCommand(command)
@@ -57,7 +61,7 @@ def main():
                 for (k, v) in bgpNeighbors.items():
                     peerRemoteAddr = k
                     newStatus = getPeerStatus(k)
-                    oldStatus = v['peer_status'] if 'peer_status' in v.keys() else ''
+                    oldStatus = getApplDbPeerStatus(k)
                     if newStatus != '' and newStatus != oldStatus:
                         setPeerStatus(peerRemoteAddr, newStatus)
 
